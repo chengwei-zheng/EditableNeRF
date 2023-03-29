@@ -70,14 +70,15 @@
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <ul class="nav nav-pills nav-justified">
                         <li>
-                            <a href=".">
+                            <a href="https://arxiv.org/abs/2212.04247">
                             <image src="img/paper.png" height="60px">
                                 <h4><strong>Paper</strong></h4>
+								
                             </a>
                         </li>
                         <li>
-                            <a href=".">
-                            <image src="img/youtube.png" height="60px">
+                            <a href="https://www.youtube.com/watch?v=Eu2twgbg4kI">
+                            <image src="img/youtube_icon.png" height="60px">
                                 <h4><strong>Video</strong></h4>
                             </a>
                         </li>
@@ -108,9 +109,8 @@
                 </p>
             </div>
         </div>
+		</br>
 
-
-<!--
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -119,35 +119,47 @@
                 </h3>
                 <div class="text-center">
                     <div style="position:relative;padding-top:56.25%;">
-                        <iframe src="https://www.youtube.com/embed/rpx3qC8fixM" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                        <iframe src="https://www.youtube.com/embed/Eu2twgbg4kI" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
                     </div>
                 </div>
             </div>
         </div>
+		</br>
 
-        
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Method Overview
+                </h3>
+				<image src="img/pipeline.png" class="img-responsive" alt="overview"><br>
+				<p class="text-justify">
+                     The query point x is first warped into the canonical space by a warp field and a latent code β<sub>t</sub> in frame t. Next, we compute the key point weights of this canonical point x′ and use it to calculate a linear combination of all key point positions k<sub>t</sub>, called weighted key points. After that, we feed the following NeRF MLP with the weighted key points and x′, then the output density and color are used for volumetric rendering. In the training stage, optical flow and depth maps are used to supervise key point positions.
+                </p>
+            </div>
+        </div>
+		</br>
+
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Citation
                 </h3>
-                <div class="form-group col-md-10 col-md-offset-1">
-                    <textarea id="bibtex" class="form-control" readonly>
-@misc{ling2022shadowneus,
-    title={ShadowNeuS: Neural SDF Reconstruction by Shadow Ray Supervision}, 
-    author={Jingwang Ling and Zhibo Wang and Feng Xu},
-    year={2022},
-    eprint={2211.14086},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+                <textarea id="bibtex" class="form-control" style="height:200px" readonly>
+@misc{zheng2023editablenerf,
+      title={EditableNeRF: Editing Topologically Varying Neural Radiance Fields by Key Points}, 
+      author={Chengwei Zheng and Wenbin Lin and Feng Xu},
+      year={2023},
+      eprint={2212.04247},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
-</textarea>
-                </div>
+				</textarea>
             </div>
         </div>
 		
--->
+		<div style="height:100px"></div>
 
     </div>
 </body>
